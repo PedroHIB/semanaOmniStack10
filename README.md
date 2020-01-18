@@ -1,1 +1,0 @@
-# semanaOmniStack10
