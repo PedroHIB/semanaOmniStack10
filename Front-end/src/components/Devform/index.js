@@ -38,7 +38,7 @@ function Devform({ onSubmit }){
 
 
     return (
-        <form htmlFor={handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <div className="input-block">
             <label htmlFor="github_username">Usuario do Github</label>
             <input 

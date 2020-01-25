@@ -21,27 +21,26 @@ function App() {
   loadDevs()
 }, [])
 
+  
 async function handleAddDev(data){
-  const response = await api.post('/devs', data)
+    const response = await api.post('/devs', data)
 
-  setDevs([...devs, response.data])
-}
+    setDevs([...devs, response.data])
+  }
 
   return (
     <div id='app'>
       <aside>        
         <strong>Cadastrar</strong>
-        <Devform onsubmit={handleAddDev}/>
+        <Devform onSubmit={handleAddDev}/>
       </aside>
+      
       <main>         
         <ul>
-
-        {devs.map(dev => (
-            <Devitem key={dev._id} dev={dev}></Devitem>
+          {devs.map(dev => (
+            <Devitem key={dev._id} dev={dev}/>
           ))}
-
-        </ul>
-  
+        </ul>  
       </main>
     </div>
   );
