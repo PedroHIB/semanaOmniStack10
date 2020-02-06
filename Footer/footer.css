@@ -1,0 +1,121 @@
+*{ margin: 0; padding: 0;}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40%{
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80%{
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+body{  
+    position: absolute;
+    bottom:0; 
+}
+
+fieldset {
+    background: black;
+    color: white;
+    width: 1000px;
+    height: 350px;
+    border: none;
+    padding-left: 76%;
+    padding-right: 80%;
+    padding-bottom: 20px;
+}
+h3{
+    color: #17fe34;
+}
+h3:hover{
+    color: green;
+}
+h5{
+    color: #5d5d5d;
+}
+
+.form-group{
+    padding-top: 15px;
+}
+
+#left{
+    position: absolute;
+    text-align:left;
+}
+#centerleft{
+    position: absolute;
+    top: 40px;
+    left: 350px;
+}
+#centerRight{
+    position: absolute;
+    top: 40px;
+    left: 550px;
+    width: 200px;
+}
+#right{
+    position: absolute;
+    top: 40px;
+    left: 800px;
+    color: #d4d1d1;;
+}
+
+/*separador*/
+input{
+    margin-top: 20px;
+    border: 2px solid #456879;
+    border-radius: 10px;
+    height: 25px;
+    width: 180px;    
+}
+
+li {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    border-top: 2px solid rgba(255, 255, 255, 0.322);
+    list-style-type: none;
+}
+
+#btn{
+    margin-top: 15px;
+    border-radius: 10px;
+    font-family: arial;
+    border: none;
+    cursor: pointer;
+    height: 20px;
+    width: 50px;
+    background: #17fe34;
+}
+#btn:hover{
+    background: green;
+}
+
+img{
+    bottom: 20px;
+    position: relative;
+    top: 280px;
+    width: 30px;
+    height: 30px;
+    left: 350px;
+    margin-left: 10px;    
+}
+img:hover{
+    animation: bounce 1s;
+}
+#logo{
+    top: 0px;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+
+}
+#icon{
+    width: 10px;
+    height: 10px ;
+}

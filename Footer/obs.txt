@@ -1,0 +1,7 @@
+footer
+Tipo nele seria bom ter:
+redes sociais,contato e um campo de envio de msg.
+
+cor
+verde 17fe34
+cinza 5d5d5d
